@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+body {
+  font-family: 'Poiret One', cursive;
+  overflow: hidden;
+  background: url(./clock-night-time-illustration-midnight-old-backgrounds-generative-ai.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: 95%;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.digitalClock {
+  width: fit-content;
+  margin: auto;
+  padding: 10px;
+  border-radius: 2px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.1);
+
+  
+
+  background: rgba(117, 117, 117, 0.377);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  /* border: 1px solid rgba(255, 255, 255, 0.18); */
+}
+
+.digitalClock h1 {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 5rem;
+}
+
+@media(max-width:768px) {
+
+  #bar1,
+  #bar2 {
+    display: none;
+  }
+
+  .digitalClock {
+    text-align: center;
+    width: 100%;
+  }
+
+  .digitalClock h1 {
+    display: block;
+  }
+}
+
+@media(max-width:480px) {
+  .digitalClock h1 {
+    font-size: 4rem;
+  }
+}
